@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0613FF7D233B791400D18F7B /* RCTMessageListViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9811EE55CB200EC43AE /* RCTMessageListViewManager.m */; };
+		0613FF7E233B791800D18F7B /* RCTAuroraIMUIModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9771EE55CB200EC43AE /* RCTAuroraIMUIModule.m */; };
+		0613FF7F233B791D00D18F7B /* RNCustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49AD821F34176100B50439 /* RNCustomInputView.m */; };
 		4E1BA8841F39AB8400A15E62 /* NIMInputAtCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1BA8821F39AB8400A15E62 /* NIMInputAtCache.h */; };
 		4E1BA8851F39AB8400A15E62 /* NIMInputAtCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1BA8831F39AB8400A15E62 /* NIMInputAtCache.m */; };
 		4E2678931F905E33007F3996 /* NIMInputEmoticonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2678701F905C2F007F3996 /* NIMInputEmoticonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,7 +68,6 @@
 		4E40B9761F67CFBB00E2FE50 /* DWRecoderCoveView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E40B9741F67CFBB00E2FE50 /* DWRecoderCoveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E40B9771F67CFBB00E2FE50 /* DWRecoderCoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40B9751F67CFBB00E2FE50 /* DWRecoderCoveView.m */; };
 		4E49AD851F34176100B50439 /* RNCustomInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49AD811F34176100B50439 /* RNCustomInputView.h */; };
-		4E49AD861F34176100B50439 /* RNCustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49AD821F34176100B50439 /* RNCustomInputView.m */; };
 		4E49AD871F34176100B50439 /* RNRecordTipsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49AD831F34176100B50439 /* RNRecordTipsView.h */; };
 		4E49AD881F34176100B50439 /* RNRecordTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49AD841F34176100B50439 /* RNRecordTipsView.m */; };
 		4E49AD951F34178000B50439 /* DWInputBarControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49AD8A1F34178000B50439 /* DWInputBarControl.h */; };
@@ -78,7 +80,6 @@
 		4E49AD9C1F34178000B50439 /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49AD911F34178000B50439 /* HPTextViewInternal.m */; };
 		4E49AD9D1F34178000B50439 /* UIView+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49AD931F34178000B50439 /* UIView+Extend.h */; };
 		4E49AD9E1F34178000B50439 /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49AD941F34178000B50439 /* UIView+Extend.m */; };
-		4E49AD9F1F34179A00B50439 /* RNCustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49AD821F34176100B50439 /* RNCustomInputView.m */; };
 		4E49ADD61F341BB400B50439 /* MyCacheImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49ADD41F341BB400B50439 /* MyCacheImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E49ADD71F341BB400B50439 /* MyCacheImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49ADD51F341BB400B50439 /* MyCacheImageView.m */; };
 		4E49ADEA1F346B7500B50439 /* NIMInputEmoticonContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49ADE81F346B7500B50439 /* NIMInputEmoticonContainerView.h */; };
@@ -149,14 +150,10 @@
 		623EA9A21EE55D0800EC43AE /* RCTAuroraIMUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623EA9991EE55D0800EC43AE /* RCTAuroraIMUI.framework */; };
 		623EA9A71EE55D0800EC43AE /* RCTAuroraIMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9A61EE55D0800EC43AE /* RCTAuroraIMUITests.m */; };
 		623EA9A91EE55D0800EC43AE /* RCTAuroraIMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 623EA99B1EE55D0800EC43AE /* RCTAuroraIMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		623EAA331EE55D4200EC43AE /* RCTMessageListViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9811EE55CB200EC43AE /* RCTMessageListViewManager.m */; };
 		624B82901EE5710E006C3C03 /* MyMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9731EE55CB200EC43AE /* MyMessageModel.swift */; };
 		624B82911EE5710E006C3C03 /* MyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9741EE55CB200EC43AE /* MyUser.swift */; };
-		624B82941EE5710E006C3C03 /* RCTAuroraIMUIModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9771EE55CB200EC43AE /* RCTAuroraIMUIModule.m */; };
 		624B829B1EE5710E006C3C03 /* RCTMessageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA97F1EE55CB200EC43AE /* RCTMessageListView.m */; };
-		624B829D1EE5710E006C3C03 /* RCTMessageListViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9811EE55CB200EC43AE /* RCTMessageListViewManager.m */; };
 		624B82DB1EE57482006C3C03 /* RCTMessageListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623EA9801EE55CB200EC43AE /* RCTMessageListView.xib */; };
-		624B82DD1EE57653006C3C03 /* RCTAuroraIMUIModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EA9771EE55CB200EC43AE /* RCTAuroraIMUIModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -936,9 +933,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E49AD9F1F34179A00B50439 /* RNCustomInputView.m in Sources */,
-				624B82DD1EE57653006C3C03 /* RCTAuroraIMUIModule.m in Sources */,
-				623EAA331EE55D4200EC43AE /* RCTMessageListViewManager.m in Sources */,
+				0613FF7F233B791D00D18F7B /* RNCustomInputView.m in Sources */,
+				0613FF7D233B791400D18F7B /* RCTMessageListViewManager.m in Sources */,
+				0613FF7E233B791800D18F7B /* RCTAuroraIMUIModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,7 +1005,6 @@
 				4E49AE2B1F3476CC00B50439 /* NIMInputEmoticonManager.m in Sources */,
 				4E3B9B371F4BD4F400218A0D /* DWAudioRecorderManager.m in Sources */,
 				4E34C3391F3D45CA00AF4B73 /* IMUITransferMessageCell.swift in Sources */,
-				624B82941EE5710E006C3C03 /* RCTAuroraIMUIModule.m in Sources */,
 				4E77A3BA1F30840000098CAF /* IMUIMessageCellProtocal.swift in Sources */,
 				4E77A3B91F30840000098CAF /* IMUIMessageCellLayoutProtocal.swift in Sources */,
 				4E77A3B01F30840000098CAF /* IMUIChatLayout.swift in Sources */,
@@ -1016,7 +1012,6 @@
 				4E77A3C61F30840000098CAF /* IMUIMessageStatusView.swift in Sources */,
 				4E77A3BB1F30840000098CAF /* IMUIMessageMessageCollectionViewDelegate.swift in Sources */,
 				4E49AE1F1F34762200B50439 /* NIMInputEmoticonButton.m in Sources */,
-				4E49AD861F34176100B50439 /* RNCustomInputView.m in Sources */,
 				4E49AD9E1F34178000B50439 /* UIView+Extend.m in Sources */,
 				4E9CE01C1F9DDB1E005FC8A7 /* IMUICardMessageCell.swift in Sources */,
 				4E77A3A51F30840000098CAF /* IMUIAudioPlayerHelper.swift in Sources */,
@@ -1039,7 +1034,6 @@
 				4E77A3B71F30840000098CAF /* IMUIReuseViewCache.swift in Sources */,
 				4E77A3AB1F30840000098CAF /* UIColorExtension.swift in Sources */,
 				4E77A3C71F30840000098CAF /* IMUITextMessageCell.swift in Sources */,
-				624B829D1EE5710E006C3C03 /* RCTMessageListViewManager.m in Sources */,
 				4E77A3B11F30840000098CAF /* IMUIVideoFileLoader.swift in Sources */,
 				4E77A3B51F30840000098CAF /* IMUIMessageCellLayout.swift in Sources */,
 				4E49AE1B1F34760500B50439 /* NIMPageView.m in Sources */,
