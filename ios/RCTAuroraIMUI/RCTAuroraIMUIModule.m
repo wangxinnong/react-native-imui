@@ -27,6 +27,11 @@ RCT_EXPORT_MODULE();
   return sharedInstance;
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+  return NO;
+}
+
 - (id)init {
   self = [super init];
   return self;
