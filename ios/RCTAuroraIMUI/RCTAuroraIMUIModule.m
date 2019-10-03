@@ -27,8 +27,7 @@ RCT_EXPORT_MODULE();
   return sharedInstance;
 }
 
-+ (BOOL)requiresMainQueueSetup
-{
++ (BOOL)requiresMainQueueSetup {
   return NO;
 }
 

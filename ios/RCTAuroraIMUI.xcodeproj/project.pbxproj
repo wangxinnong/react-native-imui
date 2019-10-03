@@ -97,7 +97,6 @@
 		4E49AE2D1F3476E500B50439 /* NIMInputEmoticonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49AE2C1F3476E500B50439 /* NIMInputEmoticonDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E49AE301F3476F800B50439 /* NSString+NIMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E49AE2E1F3476F800B50439 /* NSString+NIMKit.h */; };
 		4E49AE311F3476F800B50439 /* NSString+NIMKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E49AE2F1F3476F800B50439 /* NSString+NIMKit.m */; };
-		4E4A6D8F1FCC04C9004A169E /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4A6D901FCC04C9004A169E /* libRCTWebSocket.a */; };
 		4E4EB3A01F5112F6009A5AF8 /* IMUIBaseMessageHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB39F1F5112F6009A5AF8 /* IMUIBaseMessageHeadCell.swift */; };
 		4E5274CE1F3C0925005FB9B9 /* IMUILocationMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5274CD1F3C0925005FB9B9 /* IMUILocationMessageCell.swift */; };
 		4E5274D21F3C5CE2005FB9B9 /* IMUIRedPacketMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5274D11F3C5CE2005FB9B9 /* IMUIRedPacketMessageCell.swift */; };
@@ -363,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED53D7C224A2BEF00F2C687 /* JavaScriptCore.framework in Frameworks */,
-				4E4A6D8F1FCC04C9004A169E /* libRCTWebSocket.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1066,7 +1064,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = RL64Y54S9V;
 				ENABLE_BITCODE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../ios/Pods/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1079,7 +1081,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = RL64Y54S9V;
 				ENABLE_BITCODE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../ios/Pods/**";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1102,10 +1108,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = (
-					"-lReact",
-					"-lc++",
-				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = HXHG.RCTAuroraIMUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1128,10 +1131,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = (
-					"-lReact",
-					"-lc++",
-				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = HXHG.RCTAuroraIMUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
