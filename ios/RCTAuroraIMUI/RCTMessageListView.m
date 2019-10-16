@@ -209,14 +209,14 @@
           [message setObject:[NSNumber numberWithBool:YES] forKey:@"isShowTime"];
       }
       [self appendImageMessage:message];
-    RCTMessageModel * messageModel = [self convertMessageDicToModel:message];
-      if (isShowMenuing) {
-          [self.tmpMessageArr addObject:messageModel];
-      }else{
-          dispatch_async(dispatch_get_main_queue(), ^{
-              [self.messageList appendMessageWith: messageModel];
-          });
-      }
+      dispatch_async(dispatch_get_main_queue(), ^{
+		  RCTMessageModel * messageModel = [self convertMessageDicToModel:message];
+		  if (isShowMenuing) {
+			[self.tmpMessageArr addObject:messageModel];
+		  } else{
+			[self.messageList appendMessageWith: messageModel];
+		  }
+      });
   }
 }
 
@@ -249,6 +249,7 @@
         [self.messageList insertMessagesWith: messageModels];
     });
 }
+
 //添加图片message到数组
 - (void)appendImageMessage:(NSMutableDictionary *)message{
     NSString *strType = [message objectForKey:@"msgType"];
@@ -277,7 +278,6 @@
     }
 }
 
-
 - (void)updateMessage:(NSNotification *) notification {
     NSMutableDictionary *message = [notification object];
     NSString *tmpId = [message objectForKey:@"msgId"];
@@ -286,9 +286,10 @@
     }else{
         [message setObject:[NSNumber numberWithBool:NO] forKey:@"isShowTime"];
     }
-      RCTMessageModel * messageModel = [self convertMessageDicToModel: message];
+	
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.messageList updateMessageWith: messageModel];
+		RCTMessageModel * messageModel = [self convertMessageDicToModel: message];
+		[self.messageList updateMessageWith: messageModel];
     });
 }
 
